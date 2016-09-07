@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Subtitles and Subtitle Formats</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="subtitle, formats, srt, txt, stl, ebu"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/Icono_FCPX_XML' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>Subtitles and Subtitle Formats</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<h1>Guidelines adopted by SUBTITLES TO FCPXML</h1>
+
+<p>Two is the maximum amount of lines per subtitle. Three or more lines are not supported.</p>
+
+<p>To use italics, raiseds and forceds properly, there is a group of characters that won&rsquo;t be used as text<br/>
+and will be reserved exclusively to set up these commands, which are:</p>
+
+<p>• &ldquo;{&rdquo; for forceds,<br/>
+• &ldquo;}&rdquo; for raiseds,<br/>
+• and &ldquo;[ ]&rdquo; or &ldquo;( )&rdquo; for italics.</p>
+
+<p>These characters won&rsquo;t be displayed in your layback.</p>
+
+<h2>Italics</h2>
+
+<p>Italics can be defined through either brackets &ldquo;[ ]&rdquo; or curved brackets, aka parentheses, &ldquo;( )&rdquo;.<br/>
+Whichever you choose, they must remain the same throughout the entire file,<br/>
+since the alternative can be used for other purposes, such as character IDs or sound effect tags,<br/>
+and will be displayed as characters in the layback.</p>
+
+<p>Once you&rsquo;ve decided which brackets to use, go to Step 3 and select it <br/>
+in the drop down menu before you generate the XML file.</p>
+
+<h2>Raiseds</h2>
+
+<p>SUBTITLES TO FCPXML uses two vertical positions to properly display the subtitles.<br/>
+Subtitles are by default displayed on the bottom of the screen.</p>
+
+<p>If you don&rsquo;t want a subtitle to block the image at the bottom of the screen,<br/>
+raise the subtitle to the top of the screen. To do so, write &ldquo;}&rdquo; at the beginning of your subtitle.</p>
+
+<h2>Forceds</h2>
+
+<p>A &ldquo;forced&rdquo; subtitle is one that is not dialogue or is dialogue in a language different from the rest of the film.<br/>
+To mark a subtitle as a &ldquo;forced&rdquo; subtitle, write &ldquo;{&rdquo; at the beginning of the subtitle.</p>
+
+<p>In Step 4 you can select to only layback forced subtitles.<br/>
+The forced subtitle command character will never be displayed in your subtitle layback.</p>
+
+<h1>Recommended practices when preparing subtitles.</h1>
+
+<h2>Recommended use of italics:</h2>
+
+<ul>
+<li>Album, book, film and program titles (use quotes for song titles).</li>
+<li>Foreign words (unless they are part of regular usage).</li>
+<li>Dialogue that is heard through electronic media, such as a phone, television, or computer.</li>
+<li>Only use italics when the speaker is not in the scene(s), not merely off screen or off camera.</li>
+<li>Song lyrics (if rights have been granted) o Voice-overs</li>
+</ul>
+
+
+<p>Do not use italics to indicate emphasis on specific words.</p>
+
+<h2>Recommended use of raiseds</h2>
+
+<p>Do not alternate between raiseds and bottom-row subtitles.<br/>
+Once you start using raiseds, keep going until they are no longer needed in the scene.</p>
+
+<h2>Recommended use of forced subtitles</h2>
+
+<p>It is good practice to mark forced subtitles because oftentimes dialogue in a language different<br/>
+from the rest of the film is translated into the main one, or because it&rsquo;s the native language of the target audience<br/>
+and therefore doesn&rsquo;t need to be subtitled.</p>
+
+<ul>
+<li>Forced narrative titles should only be included if plot pertinent.</li>
+<li>Forced narratives that are redundant (e.g., identical to onscreen text or covered in the dialogue) must be deleted.</li>
+<li>Forced narratives should be in ALL CAPS, except for written passages (e.g., excerpts from books,<br/>
+magazines or newspapers, handwritten notes, social media messages and text messages),<br/>
+which must match the use of uppercase/lowercase as it appears on screen.<br/>
+In order to improve readability, mixed case can also be used for long passages of on screen text<br/>
+(e.g., long written passages used as prologue or epilogue).</li>
+<li>Never combine a forced narrative with dialogue in the same subtitle.</li>
+<li>When a forced narrative interrupts dialogue, use an ellipsis at the end of the sentence in the<br/>
+subtitle that precedes it and at the beginning of the sentence in the subtitle that follows it.</li>
+</ul>
+
+
+<h2>Other good practices</h2>
+
+<ul>
+<li>Always spell check your subtitles.</li>
+<li>Be as precise as possible when timming subtitles.</li>
+<li>Don&rsquo;t make subtitles with very long duration (more then 7 seconds)<br/>
+or very short duration (less than a second).</li>
+</ul>
+
+
+<p>Make a character limitation<br/>
+-Common character per line are: 32, 38 and 42.</p>
+
+<p>Use of dual Speakers<br/>
+- Use a hyphen followed by a space to indicate two speakers in one subtitle, with a maximum of one speaker per line.</p>
+
+<p>Reading Speed<br/>
+- Adult programs: 200 words per minute / 17 characters per second<br/>
+- Children’s programs: 160 words per minute / 13 characters per second</p>
+
+<p>Repetitions<br/>
+- Do not translate words or phrases repeated more than once.<br/>
+- If the repeated word or phrase is said twice in a row, time subtitle to the audio but translate only once.</p>
+
+<p>Foreign Dialogue<br/>
+- Foreign dialogue should only be translated if the viewer was meant to understand it (i.e., if it was subtitled in the original version).<br/>
+- When using foreign words, always verify spelling, accents and punctuation, if applicable.<br/>
+- Foreign words should be italicized, unless they have become part of regular usage<br/>
+(e.g., in English, the following no longer need to be italicized: bon appétit, rendezvous, doppelgänger, zeitgeist, persona non grata)<br/>
+and unless they are proper names (e.g., a company name).</p>
+
+<h1>Format examples</h1>
+
+<p>STL EBU is a binary language so it&rsquo;s impractical to include an example of it.</p>
+
+<p>TXT is one or two lines of text followed by the in and out times of the subtitle.<br/>
+Italics are usually marked with brackets &ldquo;[ ]&rdquo;, raiseds with &ldquo;{&rdquo;, and forceds with &ldquo;{&rdquo;.<br/>
+If you wish to mark italics with parentheses &ldquo;( )&rdquo;, SUBTITLES TO FCPXML allows you to do that.</p>
+
+<p>}Solo trabajando con nosotros<br/>
+usted y sus muchachos<br/>
+01:00:16:07\01:00:18:21<br/>
+{saldrán de esta en una pieza.<br/>
+01:00:18:21\01:00:21:21<br/>
+[Quiero que se reincorpore.<br/>
+01:00:22:13\01:00:24:09<br/>
+-¿De qué parlotea?<br/>
+-De los Minassian.<br/>
+01:00:24:09\01:00:26:21</p>
+
+<p>In an SRT file, the first line indicates the subtitle number; the second line displays its in and out times;<br/>
+and the subsequent lines are the lines of text of the subtitle.<br/>
+(The format supports up to three lines of text, but SUBTITLES TO FCPXML only supports two).<br/>
+The last line is empty and serves as a separation between subtitles.</p>
+
+<p>1<br/>
+01:00:11,486 &ndash;> 01:00:13,156<br/>
+Anteriormente en Ray Donovan.</p>
+
+<p>2<br/>
+01:00:16,255 &ndash;> 01:00:18,717<br/>
+Solo trabajando con nosotros<br/>
+usted y sus muchachos</p>
+
+<p>3<br/>
+01:00:18,717 &ndash;> 01:00:21,717<br/>
+saldrán de esta en una pieza.</p>
+
+<p>4<br/>
+01:00:22,453 &ndash;> 01:00:24,321<br/>
+Quiero que se reincorpore.</p>
+
+<p>5<br/>
+01:00:24,321 &ndash;> 01:00:26,717<br/>
+-¿De qué parlotea?<br/>
+-De los Minassian.</p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./first_QuickTour.html">Step by Step Guide</a> </p>
+
+<p> <a href="./SettingUpTourSubtitleLaybackInFinalCutProX.html">Setting Up Your Subtitle Layback in Final Cut Pro X</a> </p>
+
+<p> <a href="./ExportYourSubtitleLaybackWithCompressor.html">Export Your Subtitle Layback With Compressor</a> </p>
+
+</div>
+
+    	<div id='externalPages'>
+	<HR/>
+	<H1>External Links</H1>
+	
+<p> <a href="http://latinvoice.us/pages/SUBTITLES_TO_FCPXML/SUBTITLES_TO_FCPXML.html">Subtitles to FCPX</a> </p>
+
+<p> <a href="https://en.wikipedia.org/wiki/Final_Cut_Pro_X">Final Cut Pro X - Wikipedia, the free encyclopedia</a> </p>
+
+<p> <a href="https://en.wikipedia.org/wiki/Compressor_(software)">Compressor (software) - Wikipedia, the free encyclopedia</a> </p>
+
+</div>
+
+
+
+
+    </div>
+  </body>
+</html>

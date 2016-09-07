@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>1.- A Quick Look At The Interface and general considerations.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="settings, STL EBU, STL, GUI, italics, partial italics, forced, raiced, subtitle"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/Icono' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>1.- A Quick Look At The Interface and general considerations.</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<h1>1.- A Quick Look At The Interface and General Considerations</h1>
+
+<h2>1.1.- A Quick Look At The Interface</h2>
+
+<p>There are five numbered areas:</p>
+
+<p>1.- STL EBU Metadata<br/>
+Set up the STL EBU metadata for your subtitle file.</p>
+
+<p>2.- Vertical position control<br/>
+Define which subtitles will be displayed at the top or bottom of the screen.</p>
+
+<p>3.- Check, uncheck and reset options<br/>
+Quick options to select, deselect or clear metadata from the interface.</p>
+
+<p>4.- Convert to STL EBU<br/>
+Select your source subtitle format to generate an STL EBU file.</p>
+
+<p>5.- Convert from STL EBU<br/>
+Select your STL EBU source file to generate a txt, exl, srt, rtf or STL EBU V2 subtitle file.</p>
+
+<p><img width="1280" height="800" src="../images/GUI" alt="GUI" /></p>
+
+<h1>1.2.- General Considerations</h1>
+
+<h2>1.2.1.- Guidelines adopted by Subtitle To STL EBU on subtitles preparation and reserved characters for special purposes</h2>
+
+<p>Two is the maximum amount of lines per subtitle. Three or more lines are not supported.</p>
+
+<p>To use italics, “raiseds” and forceds properly, there is a group of characters that won’t be used as text<br/>
+ and will be reserved exclusively to set up these commands, which are:</p>
+
+<p>• “{” for forceds,</p>
+
+<p>• “}” for raiseds,</p>
+
+<p>• and “[ ]” for italics.</p>
+
+<p>These characters won’t be displayed in your layback unless you specify otherwise.</p>
+
+<p>Italics<br/>
+Italics are defined through brackets “[ ]”. Use “[“ to start writing in italics and “]” to finish. Italics are closed at the end of each text line, whether you close the bracket or not.</p>
+
+<p>Raiseds<br/>
+Subtitles to STL EBU uses two vertical positions to properly display the subtitles.<br/>
+ Subtitles are by default displayed on the bottom of the screen.<br/>
+If you don’t want a subtitle to block the image at the bottom of the screen,<br/>
+ raise it to the top. To do so, write “}” at the beginning of your subtitle.</p>
+
+<p>Forceds<br/>
+A “forced” subtitle is one that is not dialogue or is dialogue in a language different from the rest of the film.<br/>
+ To mark a subtitle as a “forced” subtitle, write “{” at the beginning of it. This is just a convention to flag forced subtitles.</p>
+
+<h2>1.2.2.- Characters restrictions in STL EBU format</h2>
+
+<p>STL EBU Standard supports five alphabets, but some symbols in each of these alphabets are not supported. If you use in your subtitling preparation a symbol or letter that is not supported by the software, it will display a warning and stop the conversion. You will need to find and replace that particular character and try the conversion again.</p>
+
+<p>Important note: When you are spell-checking your file, some softwares can add invisible characters to the text, such as carriage returns, new line characters, etc. So, on occasions, an unsupported character will not be visible. To correct this, delete and rewrite the entire subtitle (including it in and out times), and try the conversion again. Character tables are included in Chapter 4 of this guide.</p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./2ConvertToSTLEBUStepByStepGuide.html">2.- Convert To STL EBU Step-By-Step Guide.</a> </p>
+
+<p> <a href="./3ConvertFromSTLEBUStepByStepGuide.html">3.- Convert From STL EBU Step-By-Step Guide.</a> </p>
+
+<p> <a href="./4ExtraInformation.html">4.- Extra information.</a> </p>
+
+</div>
+
+    	<div id='externalPages'>
+	<HR/>
+	<H1>External Links</H1>
+	
+<p> <a href="http://www.latinvoice.us/pages/LocalizationTools/LocalizationTools.html">Localization Tools</a> </p>
+
+<p> <a href="http://www.latinvoice.us/pages/SubtitlesToSTLEBU/SubtitlesToSTLEBU.html">Subtitles to STL EBU</a> </p>
+
+</div>
+
+
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>3.- Convert From STL EBU Step-By-Step Guide.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="Subtitle format, Metadata, Vertical Position, Setup, frame rate, Settings"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/Icono' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>3.- Convert From STL EBU Step-By-Step Guide.</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<h1>3.- Convert From STL EBU Step-By-Step Guide.</h1>
+
+<p>To convert an STL EBU subtitle file to an EXL, SRT, RTF, TXT or STL EBU V2 subtitle file, we need to go through the following steps:</p>
+
+<p>define the top and bottom vertical positions for subtitles in area 2 (Vertical position control),<br/>
+select the source file in area 5 (Convert from STL EBU), and convert it to the EXL, SRT, RTF, TXT or STL EBU V2 subtitle format.</p>
+
+<p>This type of conversion won’t use the area one (STL EBU Metadata) because the STL EBU we are about to convert has its own metadata embedded.</p>
+
+<p>Let’s take a closer look at each of these fields.</p>
+
+<h2>Area 2: Vertical Position Control - Setup</h2>
+
+<p>Vertical position in the STL EBU format is defined in two ways: as in-vision with values ranging from 0-99, <br/>
+or as teletext with values ranging from 1-12. This number represents the number of rows from the top of the screen <br/>
+to the bottom subtitle row. Subtitle to STL EBU uses the most common of the two, which is teletext, reads its vertical positions, <br/>
+and translates them to the two vertical positions, (TOP and BOTTOM) that are widely compatible with most subtitle workflows.</p>
+
+<p>Since STL EBU has 12 vertical positions, “1” stands for the top of the screen, “6” for the middle, <br/>
+and “11” for the bottom (since there are two lines in each subtitle, i.e. 11 and 12).<br/>
+Thus, when you choose “6” in the drop-down menu, it means that any subtitle with a vertical position equal or less than 6<br/>
+ will appear at the TOP in your new subtitle file, and any vertical position bigger than 6 will appear at the BOTTOM in your new subtitle file.</p>
+
+<p>In the “Raiseds are at line … or below” drop-down menu, select the starting row from which subtitles will be “raised”. Once converted, those subtitles will begin with the symbol “}”, and they will be flagged to be displayed at the top of the screen. The default value is 06.</p>
+
+<p>Note that the SRT format by definition does not support “raiseds”.</p>
+
+<p><img width="561" height="111" src="../images/VP" alt="VP" /></p>
+
+<h2>Area 5: Convert From STL EBU - Setup</h2>
+
+<p>Press the button to the format you wish to convert an STL EBU file. For example, if you want to generate an EXL subfile from an STL EBU file, you should press the “STL EBU to EXL” button. Same thing with the “STL EBU to RTF” or the “STL EBU to TXT” (TXT must be UTF-8 encoded). Press “SRT to STL EBU” and you will get an UTF8-encoded SRT file. STL EBU V2 to STL EBU refers to a non-official version of the STL EBU which lacks metadata and is used mainly for distribution purposes. Button works in the same way.</p>
+
+<p>Click on the button and a browser window asking you to “open” your STL EBU subtitle file will be displayed. Once you’ve opened your subfile, a new browser window will open asking you to choose a name and location for the new subtitle file you want to save. A default name is provided, though you can overwrite it. When you’re finished, simply press “Save”.</p>
+
+<p>Optionally at top of this area, you will find two check buttons:</p>
+
+<p>”Save metadata in a rtf file”. When checked, a report will be generated in a separate file with the metadata embedded in the STL EBU file.<br/>
+“Consolidate double raiseds”. The STL EBU format has a dedicated area in the data to store the vertical position of the current subtitle. If a particular subtitle happens to have the “raised” information duplicated -in the data as well as in the text area-, the software will display a double flag “}}” in the target subtitle file. When checking this option, all double flags will be changed to a single flag “}”.</p>
+
+<p>Examples of this formats are included in Chapter 4 of this guide.</p>
+
+<p>If you need more format or encoding options, check out our Subtitle To Text-Based Formats application. An external link is provided at the bottom of this page.</p>
+
+<p><img width="251" height="237" src="../images/FromSTL" alt="FromSTL" /></p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./1AQuickLookAtTheInterfaceAndGeneralConsiderations.html">1.- A Quick Look At The Interface and general considerations.</a> </p>
+
+<p> <a href="./2ConvertToSTLEBUStepByStepGuide.html">2.- Convert To STL EBU Step-By-Step Guide.</a> </p>
+
+<p> <a href="./4ExtraInformation.html">4.- Extra information.</a> </p>
+
+</div>
+
+    	<div id='externalPages'>
+	<HR/>
+	<H1>External Links</H1>
+	
+<p> <a href="http://www.latinvoice.us/pages/LocalizationTools/LocalizationTools.html">Localization Tools</a> </p>
+
+<p> <a href="http://www.latinvoice.us/pages/SubtitlesToSTLEBU/SubtitlesToSTLEBU.html">Subtitles to STL EBU</a> </p>
+
+</div>
+
+
+
+
+    </div>
+  </body>
+</html>

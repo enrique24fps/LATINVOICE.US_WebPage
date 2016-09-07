@@ -1,0 +1,13 @@
+USER		        DATE		       FILE_NAME	 TOTAL_SUBS
+Enrique         2015-Mar-12 14:57:09      Rebelde_S1_E140  934
+Enrique         2015-Mar-12 14:59:01      Rebelde_S1_E140           934
+Enrique         2015-Mar-12 19:32:42      Rebelde_S1_E140           934
+Martin         2015-Mar-13 12:54:18      23976_DF_TCNO_YoungSoulRebels           1034
+Martin         2015-Mar-13 12:54:23      23976_DF_TCNO_YoungSoulRebels           1034
+Ivan         2015-Mar-13 16:49:41      el baile de san juan           252
+Ale         2015-Mar-13 17:16:23      Rebelde_S1_E038           845
+Ale         2015-Mar-13 17:54:35      Rebelde_S1_E041           888
+Ivan         2015-Mar-14 14:42:08      el_baile_de_san_juan_pt_2           198
+Ivan         2015-Mar-14 14:42:14      el_baile_de_san_juan_pt_2           198
+Ivan         2015-Mar-14 16:44:22      el_baile_de_san_juan           705
+

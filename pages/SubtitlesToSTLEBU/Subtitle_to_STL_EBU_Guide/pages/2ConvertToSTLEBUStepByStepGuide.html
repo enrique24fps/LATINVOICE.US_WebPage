@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>2.- Convert To STL EBU Step-By-Step Guide.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="Subtitle format, Metadata, Vertical Position, Setup, frame rate, Multilingua, Latin"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/Icono' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>2.- Convert To STL EBU Step-By-Step Guide.</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<h1>2.- Convert To STL EBU Step-By-Step Guide</h1>
+
+<p>To convert an exl, srt, rtf, txt or STL EBU V2 subtitle file to an STL EBU subtitle file, we need to go through the following steps:<br/>
+Write the metadata in area number 1 (STL EBU Metadata), <br/>
+define the top and bottom vertical positions for subtitles in area 2 (Vertical position control),<br/>
+select the source file in area 4 (Convert to STL EBU), and convert it to the STL EBU format.</p>
+
+<p>Let’s take a closer look at each of these fields.</p>
+
+<h2>Area 1: STL EBU Metadata - Setup</h2>
+
+<p>It is okay to leave fields empty in this area, unless you wish to write in helpful information for your STL EBU file. This information won’t change your subtitles (for example, changing the “width” in the metadata won’t change the actual width in your subtitles), with the exception of the “Character code table (CCT)”, which tells the software the alphabet you are using to encode your subtitles. This version of the software only supports the Latin alphabet, but in future versions you will be able to select from the Cyrillic, Arabic, Greek and Hebrew alphabets.</p>
+
+<p>Under “Original title:” write the original title of the content you are working on. This field only recognizes up to 32 characters; if you write any more, they will be ignored.</p>
+
+<p>If you are working on a serial, write the episode title up to 32 characters long in the field under “Episode title”. The following fields, “Translated title” and “Translated episode title”, should contain the designated titles for the series/movie and/or episode, respectively, for the region you are working in. This is usually provided by the owner of the content in that particular area of the world. It is standard practice to write <em>TITLE PENDING</em> and <em>EPISODE TITLE PENDING</em> for these fields. This is why these titles appear by default.</p>
+
+<p>Under “Language”, there is a drop-down menu where you can select the language you will be using. Three languages appear by default: English, Spanish and Portuguese. If you will be using a different language, pick “Other” and write in the code for that language in the field under “Code for other language”. The language code table is included in Chapter 4 of this guide.</p>
+
+<p>Using the “Width” drop-down menu, select the maximum amount of characters per line, as set in your subtitling preparation.</p>
+
+<p>Sometimes, a subtitle file needs to be changed. If you’ve changed your subtitle file, and thus, generated a new file in the metadata, change the number on the “Revision #” drop-down menu to let the software know that this is a newer version of the file.</p>
+
+<p>There are two dedicated fields to write your name and contact (your e-mail address, for example). Both fields recognize up to 32 characters, so any more than that will be ignored.</p>
+
+<p>The “Code Page Number” drop-down menu in this version only has one option, the “850 Multilingual” code page, which is very common. Its function is to tell other systems that the metadata has been encoded using this code page.</p>
+
+<p>The “DFC” (which stands for Disk Format Code) drop-down menu allows you to select the following television frame rates: STL25.01 for 25 fps (which is the European format, known as PAL), and STL30.01 for 30 fps (which is the North and South American format, known as NTSC). These are the two frame rates included in the official STL EBU definition. However, we’ve added a third, the STL24.01 for 24fps, which is quite common nowadays.</p>
+
+<p>The “Character code table” drop-down menu for this version only has one option, but it is intended for you to choose the alphabet you will be working with. This is, the letters and symbols you can use to generate a proper STL EBU file. Not every letter is accepted in the STL EBU format, so this means that all letters and symbols used in your subtitling must be included in the STL EBU table for the alphabet you chose. If you use a letter or symbol outside the STL EBU format definition, the software will display a warning so you can change it and try the conversion again.</p>
+
+<p>Under “Creation date”, select the date in which your subtitling was created. The date set on your computer is displayed by default.</p>
+
+<p><img width="576" height="256" src="../images/Metadata" alt="Metadata" /></p>
+
+<h2>Area 2: Vertical Position Control - Setup</h2>
+
+<p>Vertical position in the STL EBU format is defined in two ways: as in-vision with values ranging from 0-99, <br/>
+or as teletext with values ranging from 1-12. This number represents the number of rows from the top of the screen <br/>
+to the bottom subtitle row. Subtitle to STL EBU uses the most common of the two, which is teletext, reads its vertical positions, <br/>
+and translates them to the two vertical positions that the software supports for layback: TOP and BOTTOM.</p>
+
+<p>In your subtitling preparation, define where your subtitles will be displayed. If you want them to appear at the top of the screen, “raise” them by adding a bracket “}” at the beginning of each subtitle. The default position for a subtitle is the bottom of the screen, so there is no need to add anything if you want the subtitle to be displayed here.</p>
+
+<p>In the Vertical Position Control area you have two areas, one labeled as “To STL EBU” and the other “From STL EBU”. In this section we will go through the “To STL EBU” area and we will set up the vertical position for subtitles created for the BOTTOM or TOP areas.</p>
+
+<p>Since STL EBU has 12 vertical positions, “1” represents the top of the screen, “6” the middle, <br/>
+and “11” the bottom of the screen (line number 12 being the second subtitle line).</p>
+
+<p>In the “Raised line” drop-down menu, select the row where you want the “raised” subtitles to be displayed. The default value is 02, which is the industry standard.</p>
+
+<p>In the “Base line” drop-down menu, select the row where you want the bottom subtitles to be displayed. The default value is 11, which is the industry standard.</p>
+
+<p>We are now going to jump to area four, where we will go through the selection of our source subtitle file and getting the STL EBU we want. We will go back to area 3 further down this guide.</p>
+
+<p><img width="561" height="111" src="../images/VP" alt="VP" /></p>
+
+<h2>Area 4: Convert To STL EBU - Setup</h2>
+
+<p>Press the button from the format you wish to convert to an STL EBU file. For example, if you have an exl subfile, you should press the EXL to STL button. Same thing for the RTF to STL EBU or the TXT to STL EBU (TXT must be UTF-8 encoded). When you choose SRT to STL EBU, you should also select the corresponding text encoding: UTF8, WIN or MAC. STL EBU V2 to STL EBU refers to a non-official version of the STL EBU which lacks metadata and is used mainly for distribution purposes. The button works in the same way.</p>
+
+<p>Click on the button and a browser window asking you to open a subtitle file will be displayed.  Once you’ve opened your subfile, a new browser window will open asking you to choose a name and location for the new subtitle file you want to save. A default name is provided, but you can overwrite it. When you’re finished, simply press “Save”.</p>
+
+<p><img width="368" height="189" src="../images/ToEBU" alt="ToEBU" /></p>
+
+<h2>Optionally at top of this area, you will find three check buttons:</h2>
+
+<p>”Save report in a rtf file”. When checked, a report will be generated and saved to the disk. The report includes a list of subtitles with italics, “raiseds” and forceds. It also includes information on the biggest frame in your file (so you know the frame rate at which your file was prepared), the total number of subtitles converted, and the actual maximum width of your subtitles.<br/>
+“Keep raised sign in the text field”. The STL EBU format has a dedicated area inside the data to store the vertical position of the current subtitle, so the flag “}” used in text-based formats is no longer needed and can be erased from the actual text of the subtitle. Despite this, most subtitle labs will ask you to keep this flag in the text. For that purpose, check this option.<br/>
+“Italics in text field only”. Subtitles to STL EBU will change the italics text flags into data, erasing these brackets from the text field. Nowadays, though, most subtitling labs will require this option to be checked so that the italics flags will be kept in the subtitle text and there won’t be any italics in the STL EBU data.</p>
+
+<p>Examples of these formats are included in Chapter 4 of this guide.</p>
+
+<p>If you need more format or encoding options, check out our Subtitle To Text-Based Formats application. An external link is provided at the bottom of this page.</p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./1AQuickLookAtTheInterfaceAndGeneralConsiderations.html">1.- A Quick Look At The Interface and general considerations.</a> </p>
+
+<p> <a href="./3ConvertFromSTLEBUStepByStepGuide.html">3.- Convert From STL EBU Step-By-Step Guide.</a> </p>
+
+<p> <a href="./4ExtraInformation.html">4.- Extra information.</a> </p>
+
+</div>
+
+    	<div id='externalPages'>
+	<HR/>
+	<H1>External Links</H1>
+	
+<p> <a href="http://www.latinvoice.us/pages/LocalizationTools/LocalizationTools.html">Localization Tools</a> </p>
+
+<p> <a href="http://www.latinvoice.us/pages/SubtitlesToSTLEBU/SubtitlesToSTLEBU.html">Subtitles to STL EBU</a> </p>
+
+</div>
+
+
+
+
+    </div>
+  </body>
+</html>

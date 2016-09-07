@@ -1,0 +1,249 @@
+/* Get rid of default padding and margin */
+*{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+header,nav,article,section,footer,aside{
+    display:block;
+}
+
+/* cenrtering website */
+.container {
+    width:1000px;
+    margin:0px auto; <!--0px top and botton auto for left and right -->
+}
+
+.clear {
+    clear:both;
+}
+
+
+.logo {
+    float:left;
+    margin-top:20px;
+    
+}
+
+.logoHeader {
+    float:left;
+    
+}
+
+.logoFooter {
+    float:left;
+    
+}
+
+.top_nav {
+    margin:0px;
+    float:left;
+    width:1000px;
+}
+
+.top_nav ul li {
+    float:left;
+    padding:10px 10px;
+    
+}
+
+.content p {
+    font-family: arial;
+    font-size: 14px;
+    width:700px;
+    float:left;
+    padding-top: 10px;
+    margin-right:0px;
+}
+
+.r_side {
+    float:right;
+    padding: 50px 20px;
+    width:100;
+    height: 227px;
+
+}
+
+.botton_nav ul li {
+    float:left;
+    padding:10px 10px;
+}
+
+
+.footer_nav ul li {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+
+
+/* CSS for privacy policy */
+
+    #ppHeader
+    {
+        font-family:verdana;
+        text-transform:capitalize;
+    }
+
+    #ppBody
+    {
+        font-size:11pt;
+        width:980px;
+        margin:0 auto;
+    }
+
+    #ppBody a
+    {
+        text-decoration:none;
+
+    }
+    #website-name {
+        text-transform:capitalize;
+    }
+
+    .grayText {
+        background-color:#E9F6FB;
+        border:1px solid #dddddd;
+        border-radius:4px;
+        padding: 5px 15px;
+    }
+    .blueText {
+        background-color:#E9F6FB;
+        border:1px solid #dddddd;
+        border-radius:4px;
+        padding: 5px 15px;
+    }
+    .innerText {
+        padding: 0 40px;
+
+    }
+
+    .col-2 {
+        width:15.5%;
+        float:left;
+        display:block;
+        margin:0 5px;
+    }
+
+    .col-4 {
+        width:100%;
+        float:left;
+        display:block;
+        position:relative;
+        left:0px!Important;
+
+    }
+    .col-8 {
+
+        display:none;
+
+    }
+
+    .col-12 {
+        width:100%;
+        float:left;
+        display:block;
+    }
+
+    .gen-text-center {
+        text-align:center;
+    }
+
+    .gen-text-left {
+        text-align:left;
+    }
+
+    .quick-links {
+        padding:8px 0;
+        background:#E9F6FB;
+        border:1px solid #dddddd;
+        border-radius:5px;
+        margin:1px 0;
+    }
+    .quick-links2 {
+        padding:8px 0;
+        background:#E9F6FB;
+        border-radius:5px;
+        margin:1px 0;
+        border:1px solid #dddddd;
+    }
+    .gen-quick-links {
+        line-height:0.5;
+        color:#000000;
+        font-size:12px;
+    }
+    .quick-links:hover  {
+        background:#eeeeee;
+    }
+    .quick-links2:hover  {
+        background:#eeeeee;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    @media screen and (max-width: 1200px) {
+        .col-2 {
+            width:13.2%;
+            float:left;
+            display:block;
+            margin:0 15px;
+        }
+        .col-8 {
+            display:none;
+        }
+        .col-4 {
+            width:100%;
+            position:relative;
+            left:0px!Important;
+        }
+        .caloppa-pad,
+        .coppa-pad {
+            padding:5px 0;
+
+        }
+        #ppBody {
+            width:auto;
+
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .col-2 {
+            width:13%;
+            float:left;
+            display:block;
+            margin:0 15px;
+        }
+
+    }
+
+    @media screen and (max-width: 900px) {
+        .col-2 {
+            width:46%;
+            float:left;
+            display:block;
+            margin:0 15px;
+        }
+
+    }
+
+    @media screen and (max-width: 800px) {
+        .col-2 {
+            width:43%;
+            float:left;
+            display:block;
+            margin:0 15px;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .col-2 {
+            width:40%;
+            float:left;
+            display:block;
+            margin:0 15px;
+        }
+    }

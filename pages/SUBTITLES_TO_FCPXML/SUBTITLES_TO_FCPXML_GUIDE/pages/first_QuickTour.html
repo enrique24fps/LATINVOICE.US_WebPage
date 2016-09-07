@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+  <head>
+    <title>Step by Step Guide</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="generator" content="ParaDocs - www.paradocsapp.com" />
+    <meta name="keywords" content="settings, FCP, font, properties, adjust, select, format, file, generate, xml, drop, non drop"/>
+    <link href="../help.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div='page'>
+		<div id='headerIconAndText'>
+			<table><tr><td>
+				<a href='../index.html'><img width='80' height='80' src='../images/Icono_FCPX_XML' style='float:left; margin: 0 5px 0 0; vertical-align:middle;' /></a>
+			</td><td>
+				<h1 style='vertical-align:middle'>Step by Step Guide</h1>
+			</td></tr></table>
+		</div>
+  	
+  		<div id='bodyText'>
+    		<h1>First: A Quick Look into the Graphic Interface</h1>
+
+<p>There are four main areas numbered from 1 to 4 and two big buttons to the right: <em>Generate XML</em> and <em>Exit</em>,<br/>
+those buttons do exactly what those words mean, but before you generate your XML and quit the program,<br/>
+you must load a subtitle file (in step 4) and make sure that all settings from 1 to 4 are as desired.</p>
+
+<p><img width="1101" height="597" src="../images/GUI" alt="GUI" /></p>
+
+<h2>Step 1 - Settings for FCP X</h2>
+
+<p>Final Cut Pro uses Libraries, Events and Projects as a structure to organize any job.<br/>
+A Library is a container for Events and in turn Events contain Projects and videos.<br/>
+A Project has all the editing decisions (like in and out times for a subtitle over a video)<br/>
+needed to playback or export your video exactly as you want.<br/>
+In order to do a subtitle layback we need to import a subtitle layback Project as an Event with a Project<br/>
+containing an XML file with the subtitles already generated as Basic Title assets and all the editing decisions already made.</p>
+
+<p><img width="378" height="225" src="../images/1.Settings" alt="1.Settings" /></p>
+
+<p>For that purpose we should name the Event and the Project we will generate. <br/>
+<em>My Subtitles</em> and <em>My Subtitle Project</em> are the default names provided by the software.<br/>
+You can customize these names to identify them in FCP X.</p>
+
+<p>Be sure to know your video&rsquo;s resolution and frame rate values when setting up <em>Format and resolution</em> and <em>Frame rate</em>.<br/>
+Also, remember that the subtitle&rsquo;s timing must match the video&rsquo;s frame rate.</p>
+
+<p>In order to open your video on QuickTime, right-click your video&rsquo;s name on the <em>Finder</em> and then choose<br/>
+<em>Open with</em> > <em>QuickTime Player</em>.</p>
+
+<p><img width="500" height="286" src="../images/OpenVideo-1" alt="OpenVideo-1" /></p>
+
+<p>Then, on QuickTime, open the inspector by pressing cmd + i <br/>
+or by going to the menu bar and select <em>Window</em> > <em>Show Movie Inspector</em>.</p>
+
+<p>On the inspector <em>Format</em> section you will see the resolution values next to the codec&rsquo;s name.<br/>
+On the image below you can see that resolution values are 1920 x 1080, which correspond to an HD video.</p>
+
+<p><img width="347" height="260" src="../images/image_0001" alt="image_0001" /></p>
+
+<p>The frame rate is labeled as FPS, which stands for Frames Per Second. On the image above it&rsquo;s 23.98.</p>
+
+<p>If the resolution values don&rsquo;t match the software&rsquo;s exactly, you can apply the closest available.<br/>
+This way, an image scale will be automatically generated on FCP X when dragging the video.<br/>
+But remember that frame rate values must match.</p>
+
+<p>Note: it is not recommended but you will notice that frames rates 23.98, 24, 29.97 and 30<br/>
+sometimes they can fit each other by adjusting times or not in Step 3, but it is not a clean job<br/>
+because you are missing some frames.</p>
+
+<h2>Step 2 - Font Properties</h2>
+
+<p>This step is pretty straightforward. Default values are a very good option for your HD videos.<br/>
+Choose the font you prefer from the drop down menu: Arial, Helvetica Neue, Gill Sans, Lucida Sans<br/>
+or Avenir Next are all good options.<br/>
+Choose the font color (we recommend white or yellow, as these provide a nice contrast).<br/>
+Then choose a font size.<br/>
+Line space refers to the actual separation between two lines of text in a subtitle.<br/>
+Increase or decrease the line space as you see fit to improve reader&rsquo;s comfort.<br/>
+Choose an outline color. Black does a very good job keeping the subtitle over the video,<br/>
+and thus, makes it easier to read.<br/>
+Finally, adjust the size of the outline to increase separation against the video.</p>
+
+<p><img width="372" height="190" src="../images/2-FontProperties" alt="2-FontProperties" /></p>
+
+<h2>Step 3 - Adjust and Select Format</h2>
+
+<p>This step has four options. Default values work very well for most cases. This is a quite technical section.</p>
+
+<p>Setting 1- <em>Subtitles times adjustment</em>.<br/>
+There are two ways of measuring time of NTSC videos:  <em>drop frame</em>  and  <em>non drop frame</em>. <br/>
+Although the video remains the same, the inner clock associated to that particular video<br/>
+runs slower or faster depending on the option you choose. Sometimes your subtitles' timing<br/>
+comes from a <em>drop frame</em> video source, but your actual video runs over the other clock.<br/>
+When this happens, your subtitles will progressively display earlier or later than they should<br/>
+at a rate of approximately two frames per minute (around 20 frames every 10 minutes or 3.5 seconds per hour).<br/>
+The exact factor in this cases is 1000/1001 or 1001/1000 the other way around.<br/>
+When this happens, just choose the proper option from the drop-down menu to compensate the difference.</p>
+
+<p>Setting 2-<em>Select a subtitle format</em><br/>
+This version of SUBTITLES TO FCPXML supports STL, EBU, TXT and SRT subtitle formats. <br/>
+If your subtitles are encoded in any other format, you should try our subtitle converter software.</p>
+
+<p>It is important to remember that this version of the software only accepts one or two lines per subtitle.<br/>
+Three or more lines are not accepted.</p>
+
+<p>STL EBU format is a platform-free format. It has its own character tables and supports the following alphabets:<br/>
+Latin, Latin/Cyrillic, Latin/Arabic, Latin/Greek and Latin/Hebrew.<br/>
+This version of the software supports only the Latin alphabet. If you have any other alphabet,<br/>
+you must convert your STL EBU to TXT (UTF 8) in order to do the subtitle layback.</p>
+
+<p>When selecting the TXT or SRT formats, pay special attention to the text encoding labeled (WIN), (MAC) or (UTB).<br/>
+Failure in choosing the right text encoding will lead to misplaced letters and accent marks, or too many line errors.<br/>
+If this is the case, try again with the proper encoding.</p>
+
+<p>We strongly suggest the use of UTF8 text encoding for your subtitling since it&rsquo;s a platform-free format<br/>
+and offers a larger amount of characters than the alternatives, such as the musical note (♪),<br/>
+which is very often used in Closed Captioning.</p>
+
+<p>See the Subtitles and Subtitle Formats section in this guide for further information on industry standards<br/>
+for commands and formats, as well as good practices for subtitles preparation.<br/>
+A link is provided at the bottom of this page.</p>
+
+<p>Setting 3-<em>Italics text format</em><br/>
+There are two options in the drop-down menu: &ldquo;[ and ]&rdquo; and &ldquo;( and )&rdquo;.<br/>
+Choose the one that corresponds to your subtitle preparation.<br/>
+The &ldquo;[ and ]&rdquo; option means that when the character &ldquo;[&rdquo; appears, italics style should begin.<br/>
+When &ldquo;]&rdquo; appears, italics style should end and regular style should be used from that point on.</p>
+
+<p>The default font style is regular, so when italics style is used, it will stop at the end of the line<br/>
+whether it is marked by a &ldquo;]&rdquo; or not. Thus, the next line will always start with regular style.</p>
+
+<p>The same applies for &ldquo;( and )&rdquo;, only that &ldquo;(&rdquo; and &ldquo;)&rdquo; characters are used instead.</p>
+
+<p>These two options are used because sometimes the above-mentioned characters are used for different purposes,<br/>
+such as enclosing sound effects or speaker ID’s: (huge laugh) or (Peter) Hi, what’s up?, for instance.<br/>
+Or viceversa: [huge laugh] or [Peter] Hi, what’s up?.<br/>
+This is why you should label italics accordingly to avoid any confusion.</p>
+
+<p>Setting 4 -<em>STL raised are in line or less</em><br/>
+This option is used when you have an STL EBU file as a subfile source.</p>
+
+<p>Vertical position in the STL EBU format is defined in two ways: as in -vision with values ranging from 0-99,<br/>
+or as teletext with values ranging from 1-12. This number represents the number of rows from the top of the screen<br/>
+to the bottom subtitle row. SUBTITLE TO FCPX uses the most common, teletext, and reads its vertical positions<br/>
+and translates them to the two vertical positions that the software supports for layback: TOP and BOTTOM.</p>
+
+<p>Since STL EBU has 12 vertical positions, &ldquo;1&rdquo; stands for the top of the screen, &ldquo;6&rdquo; for the middle,<br/>
+and &ldquo;11&rdquo; for the bottom (because we have two text lines i.e. 11 and 12).<br/>
+Thus, when you choose 6 in the drop down menu, it means that any subtitle with a vertical position equal or less than 6<br/>
+will be at the TOP position in your layback, and any vertical position bigger than 6 will be at the bottom of the screen.</p>
+
+<p><img width="377" height="219" src="../images/3.AdjustAndSelect" alt="3.AdjustAndSelect" /></p>
+
+<h2>Step 4 - Select File</h2>
+
+<p>In order to generate an XML file, first you need to load a subtitle file.</p>
+
+<p><img width="380" height="194" src="../images/4.SelectFile" alt="4.SelectFile" /></p>
+
+<p>Use the button <em>Load a file</em> to browse and select a subtitle file in the format selected in Step 3.<br/>
+Once you&rsquo;ve loaded a subfile, its name will appear under the <em>Selected file:</em> label. <br/>
+If you haven&rsquo;t loaded a file, the line <em>There Is No File Selected</em> will read under this label.</p>
+
+<p>Once the file is loaded, press the button <em>Generate XML</em>.</p>
+
+<p>If you change the subfile after loading it or make any changes in the settings 1 through 4,<br/>
+you must reload the file by pressing the Reload button, or you can simply load the file again.</p>
+
+<p>You can also clear the loaded file by pressing <em>Clear selection</em>.</p>
+
+<p>In the subtitling industry, it&rsquo;s common practice to mark the so-called forced subtitles<br/>
+with the character &ldquo;{&rdquo; at the beginning of the first line of a subtitle.<br/>
+Forced subtitles are usually UPPERCASE-only subtitles that translate signs (billboards, road signs),<br/>
+text (the title of the movie), and/or burned-ins from a previous subtitling<br/>
+(for example, when there&rsquo;s a scene in a different language from the rest of the movie).</p>
+
+<p>If you want to layback only the forced subtitles in a subfile, simply mark the <em>Only forceds</em> box.</p>
+
+<h2>Step 5 - Generate XML</h2>
+
+<p>Once your settings are as desired and you have loaded a subfile,<br/>
+press the button <em>Generate XML</em> and a window will appear where you can write the name of your file.<br/>
+Then, proceed to select the location where you want to save the .fcpxml file<br/>
+that you will import into Final Cut Pro X.</p>
+
+<h2>What To Do Next</h2>
+
+<p>Open Final Cut Pro X, set up your layback and, using Compressor, export a video with the subtitles burned into it.</p>
+
+<p>Below, you&rsquo;ll find a couple of chapters that will walk you through the subtitle layback in FCPX<br/>
+and provide you with an example on how to export a video using Compressor.</p>
+    	</div>
+    	
+    	<div id='seeAlso'>
+	<HR/>
+	<H1>See Also</H1>
+	
+<p> <a href="./SubtitlesAndSubtitleFormats.html">Subtitles and Subtitle Formats</a> </p>
+
+<p> <a href="./SettingUpTourSubtitleLaybackInFinalCutProX.html">Setting Up Your Subtitle Layback in Final Cut Pro X</a> </p>
+
+<p> <a href="./ExportYourSubtitleLaybackWithCompressor.html">Export Your Subtitle Layback With Compressor</a> </p>
+
+</div>
+
+    	<div id='externalPages'>
+	<HR/>
+	<H1>External Links</H1>
+	
+<p> <a href="http://latinvoice.us/pages/SUBTITLES_TO_FCPXML/SUBTITLES_TO_FCPXML.html">Subtitles to FCPX</a> </p>
+
+<p> <a href="https://en.wikipedia.org/wiki/Final_Cut_Pro_X">Final Cut Pro X - Wikipedia, the free encyclopedia</a> </p>
+
+<p> <a href="https://en.wikipedia.org/wiki/Compressor_(software)">Compressor (software) - Wikipedia, the free encyclopedia</a> </p>
+
+</div>
+
+
+
+
+    </div>
+  </body>
+</html>
